@@ -1,0 +1,7 @@
+opencv-python>=4.5.0
+numpy>=1.19.0
+fer>=22.4.0
+tensorflow>=2.4.0
+mtcnn>=0.1.0
+pandas>=1.1.0
+moviepy>=1.0.3
