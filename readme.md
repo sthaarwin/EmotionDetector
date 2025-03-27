@@ -7,9 +7,12 @@ A real-time face detection application using OpenCV and FER (Facial Expression R
 - Real-time face and eye detection
 - Emotion recognition with confidence scores
 - FPS (Frames Per Second) counter
-- Screenshot capture functionality
-- Toggle detection visualization
+- Screenshot and video recording capabilities
+- Interactive controls panel with adjustable parameters
+- Brightness and contrast adjustment
+- Customizable detection visualization
 - Live face count display
+- Emotion history tracking
 
 ## Requirements
 
@@ -43,9 +46,20 @@ python main.py
 ```
 
 ### Controls:
-- Press 's' to save a screenshot
-- Press 't' to toggle detection visualization
-- Press 'q' to quit
+- 'Q': Quit application
+- 'S': Save screenshot
+- 'T': Toggle detection visualization
+- 'M': Toggle menu overlay
+- 'R': Toggle video recording
+- 'C': Toggle control panel window
+- '+/-': Adjust brightness
+- '{/}': Adjust contrast
+
+### Control Panel
+Press 'C' to open the control panel which includes:
+- Brightness slider (-100 to +100)
+- Contrast slider (0.1 to 3.0)
+- Detection confidence threshold slider
 
 ## Emotion Detection
 
@@ -66,12 +80,9 @@ Each detected face will display the dominant emotion and its confidence score.
 - Emotion detection is more computationally intensive than basic face detection
 - For better performance, ensure good lighting conditions
 
-## Output Format
-
-Screenshots are saved in the format:
-```
-screenshot_YYYYMMDD_HHMMSS.jpg
-```
+## Output Files
+- Screenshots: `screenshot_YYYYMMDD_HHMMSS.jpg`
+- Video recordings: `recording_YYYYMMDD_HHMMSS.avi`
 
 ## Development
 
